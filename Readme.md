@@ -11,7 +11,7 @@ PostgreSQL (v12 or higher)
 - Install the dependencies by running <b> `npm install` </b>
 - Start the server using <b>`npm run dev`</b>
 - In a separate terminal window, start the client using <b>`npm start`</b>
-- Open your browser and navigate to http://localhost:3000
+- Open your browser and navigate to http://localhost:5000
 
 # License
 This project is licensed under the MIT License. 
