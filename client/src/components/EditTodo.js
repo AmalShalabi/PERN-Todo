@@ -8,7 +8,7 @@ const EditTodo = ({ item }) => {
     try {
       const body = { description };
       const response = await fetch(
-        `http://localhost:5000/todos/${item.todo_id}`,
+        `https://pern-todo-amalsh8.vercel.app/todos/${item.todo_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
