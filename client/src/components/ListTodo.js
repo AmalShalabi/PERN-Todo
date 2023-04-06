@@ -6,7 +6,9 @@ const ListTodo = () => {
 
   const getTodo = async () => {
     try {
-      const response = await fetch("http://localhost:5000/todos");
+      const response = await fetch(
+        "https://pern-todo-amalsh8.vercel.app/todos"
+      );
       const jsonData = await response.json();
       setListItems(jsonData);
     } catch (error) {
@@ -21,9 +23,12 @@ const ListTodo = () => {
   //Delete item when click on delete button
   const deleteItem = async (id) => {
     try {
-      const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
-        method: "DELETE",
-      });
+      const deleteTodo = await fetch(
+        `https://pern-todo-amalsh8.vercel.app/todos/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
       const newListItems = listItems.filter((item) => item.todo_id !== id);
       setListItems(newListItems);
     } catch (error) {
